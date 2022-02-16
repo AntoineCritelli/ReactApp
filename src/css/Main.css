@@ -1,0 +1,21 @@
+.mainContainer {
+    display: inline-block;
+    position: relative;
+    width: 19.5%;
+    height: 40%;
+    left: 0%;
+    top: 0%;
+    text-align: left;
+    margin-left: 0.5%;
+    float: left;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline black;
+}
