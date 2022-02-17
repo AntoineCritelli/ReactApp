@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../css/Display.css";
+import {Link} from "react-router-dom";
 
 class Display extends Component {
 
@@ -11,27 +12,27 @@ class Display extends Component {
         };
     }
 
-    handlerOnMouseOver = (e) => {
-        this.setState(state => ({
+    handlerOnMouseOver = () => {
+        this.setState(() => ({
             isMouseOver: true
         }));
     }
 
-    handlerOnMouseOut = (e) => {
-        this.setState(state => ({
+    handlerOnMouseOut = () => {
+        this.setState(() => ({
             isMouseOver: false
         }));
     }
 
     render () {
         return (
-            <a href={this.props.productPage}>
+            <Link to={`/product/${this.props.id}`}>
                 <img alt={(this.state.isMouseOver)?"Image2":"Image1"}
-                     src={(this.state.isMouseOver)?this.props.image2:this.props.image1}
+                     src={'/Images/'.concat(this.state.isMouseOver?this.props.image2:this.props.image1)}
                      onMouseOver={() => this.handlerOnMouseOver()}
                      onMouseOut={() => this.handlerOnMouseOut()}
                 />
-            </a>
+            </Link>
         )
     }
 }
