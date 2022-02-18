@@ -26,7 +26,7 @@ class Display extends Component {
 
     render () {
         return (
-            <Link to={`/product/${this.props.id}`}>
+            <Link to={`${this.props.id}`}>
                 <img alt={(this.state.isMouseOver)?"Image2":"Image1"}
                      src={'/Images/'.concat(this.state.isMouseOver?this.props.image2:this.props.image1)}
                      onMouseOver={() => this.handlerOnMouseOver()}

@@ -5,6 +5,8 @@ import "./App.css";
 // import pages
 import ArticleDisplay from "./components/ArticleDisplay";
 import NavBar from "./components/NavBar";
+import PageNotFound from "./components/PageNotFound";
+import MainPage from "./components/MainPage";
 
 
 class App extends Component {
@@ -13,7 +15,9 @@ class App extends Component {
 				<BrowserRouter className="App">
 					<NavBar />
 					<Routes>
+						<Route path="/" element={<MainPage />} />
 						<Route path="/products/*" element={<ArticleDisplay />} />
+						<Route path="*" element={<PageNotFound />} />
 					</Routes>
 				</BrowserRouter>
 		)

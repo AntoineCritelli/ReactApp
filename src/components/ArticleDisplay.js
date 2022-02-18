@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, useParams} from "react-router-dom";
 import "../css/ArticleDisplay.css";
 
 import Article from './Article';
+import PageNotFound from "./PageNotFound";
 
 //TODO better way to create data (ex : via bdd)
 const pants = [
@@ -56,6 +57,7 @@ const sportShoes = [
 ]
 
 class ArticleDisplay extends Component {
+
     render() {
         return (
             <div className="ArticleContainer">
@@ -125,6 +127,19 @@ class ArticleDisplay extends Component {
                             />
                         )}
                     />
+                    <Route
+                        path="sport/shoes/:id"
+                        element={
+                            <Article
+                                id={0}
+                                name={sportShoes[0][0]}
+                                prix={sportShoes[0][1]}
+                                image1={sportShoes[0][2]}
+                                image2={sportShoes[0][3]}
+                            />
+                        }
+                    />
+                    <Route path="*" element={<PageNotFound />} />
                 </Routes>
             </div>
         )

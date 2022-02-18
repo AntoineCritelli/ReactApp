@@ -7,13 +7,12 @@ import Display from './Display.js';
 
 class Article extends Component {
 
-    //TODO change url for product page
     render() {
         return (
             <div className="articleContainer">
                 <Display id={this.props.id} image1={this.props.image1} image2={this.props.image2}/>
 
-                <Link className="name" to={`/product/${this.props.id}`}>
+                <Link className="name" to={`${this.props.id}`}>
                     {this.props.name}
                 </Link>
 
