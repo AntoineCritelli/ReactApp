@@ -10,14 +10,12 @@ import NavBar from "./components/NavBar";
 class App extends Component {
   render() {
 	return (
-			<div className="App">
-				<NavBar />
-				<BrowserRouter>
+				<BrowserRouter className="App">
+					<NavBar />
 					<Routes>
-						<Route path="/product" element={<ArticleDisplay />} />
+						<Route path="/products/*" element={<ArticleDisplay />} />
 					</Routes>
 				</BrowserRouter>
-			</div>
 		)
   }
 }
