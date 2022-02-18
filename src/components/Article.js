@@ -7,6 +7,7 @@ import Display from './Display.js';
 
 class Article extends Component {
 
+    //TODO change url for product page
     render() {
         return (
             <div className="articleContainer">
