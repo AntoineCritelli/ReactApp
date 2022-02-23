@@ -1,0 +1,44 @@
+.ProductPage {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 20%;
+    padding-top: 5%;
+}
+
+.ImagesDisplayer {
+    float: left;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 50%;
+    height: 50%;
+    border: black solid 2px;
+}
+
+.ProductDescription {
+    float: right;
+    position: relative;
+    right: 0%;
+    top: 0%;
+    width: 45%;
+    border: black solid 2px;
+    padding-left: 1%;
+}
+
+.ProductName {
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+.ProductPrice {
+    padding-bottom: 2%;
+}
+
+.ProductAssociation {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+}

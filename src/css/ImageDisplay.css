@@ -1,0 +1,14 @@
+.BigImage {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.SmallImages {
+    margin-top: 3%;
+}
+
+.SmallImages img {
+    width: 20%;
+    margin-left: 10%;
+    cursor: pointer;
+}
