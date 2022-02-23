@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "../css/Display.css";
 import {Link} from "react-router-dom";
 
-class Display extends Component {
+class Display extends React.Component {
 
     constructor(props) {
         super(props);
@@ -26,9 +26,9 @@ class Display extends Component {
 
     render () {
         return (
-            <Link to={`${this.props.id}`}>
-                <img alt={(this.state.isMouseOver)?"Image2":"Image1"}
-                     src={'/Images/'.concat(this.state.isMouseOver?this.props.image2:this.props.image1)}
+            <Link  to={`/productpage/${this.props.article.type}/${this.props.id}`}>
+                <img alt={(this.state.isMouseOver)?this.props.article.image2:this.props.article.image1}
+                     src={'/Images/'.concat(this.state.isMouseOver?this.props.article.image2:this.props.article.image1)}
                      onMouseOver={() => this.handlerOnMouseOver()}
                      onMouseOut={() => this.handlerOnMouseOut()}
                 />
