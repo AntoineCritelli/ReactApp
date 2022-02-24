@@ -1,0 +1,23 @@
+.MainPage {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    margin-top: 3%;
+    font-size: x-large;
+    text-align: center;
+}
+
+.nom {
+    font-weight: bold;
+}
+
+.lien {
+    all: unset;
+    color: blue;
+}
+
+.lien:hover {
+    cursor: pointer;
+    text-decoration: underline blue solid;
+}
