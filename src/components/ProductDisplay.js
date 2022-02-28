@@ -3,15 +3,15 @@ import {Link} from "react-router-dom";
 import "../css/Article.css";
 
 // import COmponent
-import Display from './Display.js';
+import ProductsImagesDisplay from './ProductsImagesDisplay.js';
 
-class Article extends React.Component{
+class ProductDisplay extends React.Component{
 
     render() {
 
         return (
             <div className="articleContainer">
-                <Display id={this.props.id} article={this.props.article} />
+                <ProductsImagesDisplay id={this.props.id} article={this.props.article} />
 
                 <Link className="name" to={`/productpage/${this.props.article.type}/${this.props.id}`}>
                     {this.props.article.name}
@@ -25,4 +25,4 @@ class Article extends React.Component{
     }
 }
 
-export default Article;
+export default ProductDisplay;

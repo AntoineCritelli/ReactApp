@@ -8,16 +8,16 @@
     text-align: center;
 }
 
-.nom {
+.MainPage .nom {
     font-weight: bold;
 }
 
-.lien {
+.MainPage .lien {
     all: unset;
     color: blue;
 }
 
-.lien:hover {
+.MainPage .lien:hover {
     cursor: pointer;
     text-decoration: underline blue solid;
 }

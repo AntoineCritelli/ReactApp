@@ -7,7 +7,7 @@
     padding-top: 5%;
 }
 
-.ImagesDisplayer {
+.ProductPage .ImagesDisplayer {
     float: left;
     position: relative;
     left: 0%;
@@ -16,7 +16,7 @@
     height: 50%;
 }
 
-.ProductDescription {
+.ProductPage .ProductDescription {
     float: right;
     position: relative;
     right: 0%;
@@ -25,17 +25,17 @@
     padding-left: 1%;
 }
 
-.ProductName {
+.ProductPage .ProductName {
     font-size: large;
     font-weight: bold;
     padding-bottom: 2%;
 }
 
-.ProductPrice {
+.ProductPage .ProductPrice {
     padding-bottom: 2%;
 }
 
-.ProductAssociation {
+.ProductPage .ProductAssociation {
     position: relative;
     bottom: 0%;
     left: 0%;

@@ -2,7 +2,7 @@ import React from "react";
 
 import "../css/ImageDisplay.css";
 
-class ImagesDisplayer extends React.Component {
+class ImagesDisplay extends React.Component {
 
     constructor(props) {
         super(props);
@@ -35,4 +35,4 @@ class ImagesDisplayer extends React.Component {
     }
 }
 
-export default ImagesDisplayer;
+export default ImagesDisplay;

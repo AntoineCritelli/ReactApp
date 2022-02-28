@@ -1,10 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
 import "../css/ProductPage.css";
+
+
 import Products from "../data/Datas";
-import ArticleSmallDisplay from "./ArticleSmallDisplay";
-import ImagesDisplayer from "./ImagesDisplayer";
+import ProductDisplay from "./ProductDisplay";
+import ImagesDisplay from "./ImagesDisplay";
 
 export default function ProductPage() {
 
@@ -14,7 +15,7 @@ export default function ProductPage() {
 
     return (
         <div className="ProductPage">
-            <ImagesDisplayer article={product} />
+            <ImagesDisplay article={product} />
             <div className="ProductDescription">
                 <div className="ProductName">{product.name}</div>
                 <div className="ProductPrice">{product.prix} €</div>
@@ -27,7 +28,13 @@ export default function ProductPage() {
                 </div>
             </div>
             <div className="ProductAssociation">
-                <ArticleSmallDisplay />
+                {Products.getProductsByType(product.type).map((product) =>
+                    <ProductDisplay
+                        key={product.id}
+                        id={product.id}
+                        article={product}
+                    />
+                )}
             </div>
         </div>
     )
