@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes, Route, Navigate} from "react-router-dom";
-import "../css/ArticleDisplay.css";
+import "../css/ProductsPage.css";
 
 import ProductDisplay from './ProductDisplay';
 import Products from "../data/Datas";

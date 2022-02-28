@@ -28,11 +28,12 @@ export default function ProductPage() {
                 </div>
             </div>
             <div className="ProductAssociation">
-                {Products.getProductsByType(product.type).map((product) =>
+                {Products.getProductsByType(product.type).map((article) =>
+                    (article.id !== product.id) &&
                     <ProductDisplay
-                        key={product.id}
-                        id={product.id}
-                        article={product}
+                        key={article.id}
+                        id={article.id}
+                        article={article}
                     />
                 )}
             </div>

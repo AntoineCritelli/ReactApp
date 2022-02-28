@@ -1,13 +1,13 @@
-.BigImage {
+.ImagesDisplayer .BigImage img{
     width: 50%;
     margin-left: 25%;
 }
 
-.SmallImages {
+.ImagesDisplayer .SmallImages {
     margin-top: 3%;
 }
 
-.SmallImages img {
+.ImagesDisplayer .SmallImages img {
     width: 20%;
     margin-left: 10%;
     cursor: pointer;

@@ -1,4 +1,4 @@
-.articleContainer {
+.productContainer {
     display: inline-block;
     position: relative;
     width: 19.5%;
@@ -10,12 +10,12 @@
     margin-top: 2%;
 }
 
-a {
+.productContainer a {
     display: block;
     color: black;
     text-decoration: none;
 }
 
-a:hover {
+.productContainer a:hover {
     text-decoration: underline black;
 }

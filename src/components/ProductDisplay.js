@@ -10,7 +10,7 @@ class ProductDisplay extends React.Component{
     render() {
 
         return (
-            <div className="articleContainer">
+            <div className="productContainer">
                 <ProductsImagesDisplay id={this.props.id} article={this.props.article} />
 
                 <Link className="name" to={`/productpage/${this.props.article.type}/${this.props.id}`}>

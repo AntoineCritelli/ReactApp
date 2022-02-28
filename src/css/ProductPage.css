@@ -1,28 +1,26 @@
 .ProductPage {
-    position: relative;
+    position: absolute;
     width: 80%;
-    height: 100%;
     left: 10%;
-    top: 20%;
-    padding-top: 5%;
+    top: 10%;
+    border: solid black 2px;
 }
 
 .ProductPage .ImagesDisplayer {
-    float: left;
-    position: relative;
-    left: 0%;
-    top: 0%;
+    display: inline-block;
     width: 50%;
     height: 50%;
+    border: solid black 2px;
 }
 
 .ProductPage .ProductDescription {
-    float: right;
-    position: relative;
+    display: inline-block;
+    position: absolute;
     right: 0%;
     top: 0%;
     width: 45%;
     padding-left: 1%;
+    border: solid black 2px;
 }
 
 .ProductPage .ProductName {
@@ -36,7 +34,9 @@
 }
 
 .ProductPage .ProductAssociation {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
+    border: solid black 2px;
+    margin-top: 15%;
+    position: absolute;
+    height: 70%;
+    overflow-y: hidden;
 }
